@@ -87,3 +87,14 @@ const poll = {
     // This generates [0, 0, 0, 0]. More in the next section 😃
     answers: new Array(4).fill(0)
 }
+
+;
+(function() {
+    console.log('IIFE 调用函数表达式');
+})();
+
+;
+(() => console.log('IIFE 调用函数表达式'))();
+console.log('-------------------------------------------------------------------------------');
+
+//闭包
