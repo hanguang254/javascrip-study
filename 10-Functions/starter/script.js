@@ -98,3 +98,15 @@ const poll = {
 console.log('-------------------------------------------------------------------------------');
 
 //闭包
+
+//IIFE形式
+(function() {
+    const hearder = document.querySelector('h1');
+    //h1变为红色
+    hearder.style.color = 'red';
+    //变为蓝色
+    const f = function() { hearder.style.color = '#00FFFF'; };
+    // 点击事件
+    document.querySelector('body').addEventListener('click', f);
+
+})();
